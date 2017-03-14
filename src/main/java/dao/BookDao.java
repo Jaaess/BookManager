@@ -13,7 +13,7 @@ public interface BookDao {
 
     Book getByIsbn(String isbn);
 
-    List getByAuthor(String authorEmail);
+    List<Book> getByAuthor(String authorEmail);
 
     List<Book>  sortByTitle();
 }
