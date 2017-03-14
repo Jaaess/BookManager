@@ -11,7 +11,7 @@ cd BookManager
 ```
 - print all books:  
 ```
-mvn exec:java -Dexec.mainClass=controller.Runner -Dexec.args="PrintAllBooks"
+...\BookManager> mvn exec:java -Dexec.mainClass=controller.Runner -Dexec.args="PrintAllBooks"
 ```
 - print all magazines:  
 ```
@@ -37,3 +37,12 @@ mvn exec:java -Dexec.mainClass=controller.Runner -Dexec.args="SortBooksByTitle"
 ```
 mvn exec:java -Dexec.mainClass=controller.Runner -Dexec.args="SortMagazinesByTitle"
 ```
+
+> CMD command line to run the unit tests:
+
+```
+...\BookManager> mvn test
+```
+
+
+
