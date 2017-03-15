@@ -15,15 +15,15 @@ BookManager/
     |          ├── controller/ 
     |          |        └── Runner     # Class to run the project, where the main method is declared.
     |          ├── dao/
-    |          |    ├── AuthorDao      # This interface defines the operations to be performed for the Author model.
-    |          |    ├── BookDao        # This interface defines the operations to be performed for the Book model.
-    |          |    ├── MagazineDao    # This interface defines the operations to be performed for the Magazine model.
+    |          |    ├── AuthorDao      # This interface defines the operations to be performed for the Author model: getByEmail()
+    |          |    ├── BookDao        # This interface defines the operations to be performed for the Book model: getAll(), getByIsbn(), getByAuthor(), sortByTitle().
+    |          |    ├── MagazineDao    # This interface defines the operations to be performed for the Magazine model: getAll(), getByIsbn(), getByAuthor(), sortByTitle().
     |          |    └── impl
-    |          |          ├── AuthorDaoImpl  # This class implements RoomDao interface. This class is responsible of implementing the methods and manipulate the data.
+    |          |          ├── AuthorDaoImpl  # This class implements RoomDao interface. This class is responsible of implementing the declared methods and manipulate the data.
     |          |          ├── BookDaoImpl       # This class implements BookDao interface.
     |          |          └── MagazineDaoImpl   # This class implements MagazineDao interface.                   
     |          ├── db/
-    |          |    └── CSVReader   # This class is responsible of reading the CSV files, and delivering a List of objects (Author, Book, magazine). Three static methods are declared inside, each method reads a csv-file. 
+    |          |    └── CSVReader   # This class is responsible of reading the CSV files, and delivering a List of objects (Author, Book, magazine). Three static methods are declared inside, each method reads a csv-file. The methods are: readBooksFromCSV(),readAuthorsFromCSV(), readMagazinesFromCSV().
     |          └── model
     |               ├── Author      # Author model
     |               ├── Book        # Book model
