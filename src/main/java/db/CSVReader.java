@@ -11,6 +11,7 @@ import java.util.*;
 public class CSVReader {
 
     // method to read CVS file using BufferedReader and String split()
+    // The header will be also read, and it's the object with the index 0 in the returned list; I will get rid of it during the manipulation of data using the DAO pattern.
     public static List<Book> readBooksFromCSV() throws IOException {
         List<Book> books = new ArrayList<>();
         BufferedReader br = new BufferedReader(new FileReader("data/buecher.csv"));
